@@ -1,0 +1,553 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #fffeb0;
+    --tertiary-color: #0397b4;
+    --fourth-color: #ffff; 
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: var(--tertiary-color);
+    font-family: "Apple Chancery", cursive;
+  }
+  
+  /* HEADER / NAV BAR STYLES START */
+  
+  header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+  
+  header h1 {
+        font-size: 38px;
+        border: 4px solid var(--secondary-color);
+        background-color: rgb(253, 253, 253);
+        padding: 10px;
+        color: var(--secondary-color);
+        width: 60%;
+        margin: .20%;
+        border-radius: 10px;
+        box-shadow: none;
+  }
+    
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 5px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    text-shadow: none;
+  }
+  
+  header nav ul li a:hover {
+    background-color: rgba(247, 246, 242, 0.8);;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    text-shadow: none;
+  }
+  
+  /* HEADER / NAVBAR STYLES END */
+  
+  
+  
+  /* STYLE ALL SECTION TAGS */
+  section {
+    padding: 125px;
+  }
+  
+  /* HERO STYLES START */
+  .hero {
+    background-image: url('https://wallpaperforu.com/wp-content/uploads/2020/08/vector-wallpaper-2008271507542-scaled.jpg');
+    background-size: auto;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding 80px;
+  }
+  
+  .hero-cta h3 {
+        font-size: 22px;
+        border: 4px solid var(--secondary-color);
+        background-color: rgba(240, 239, 232, .9);
+        padding: 10px;
+        color: var(--primary-color);
+        width: 100%;
+        margin: .50%;
+        border-radius: 10px;
+        align-items: right;
+  }
+  
+  .hero-form {
+    border: 3px solid var(--secondary-color);
+    background-color: rgba(255, 225, 56, 0.8);
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-form button:hover {
+    background-color: var(--tertiary-color);  
+  }
+  
+  .hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .hero-form p {
+    margin: 5px 0 15px 0;
+  }
+  
+  .form-input {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px; 
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+  
+  .hero-form label {
+    margin: 0 5px;
+  }
+  
+  .hero-form button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  } 
+  
+  .checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+  }
+  
+  .checkbox-wrapper label, .radio-wrapper label {
+    position: relative;
+    left: 10px;
+    margin: 10px;
+    line-height: 1.6;
+  }
+  
+  .checkbox-wrapper label::before, .radio-wrapper label::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.75);  
+    border: 1px solid var(--secondary-color);  
+    position: absolute;
+    top: -4px;
+    left: -30px;
+  }
+  
+  .radio-wrapper label::before {
+    border-radius: 50%;
+  }
+  
+  .radio-wrapper label::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    position: absolute;
+    left: -29px;
+    top: -3px;
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+  }
+  
+  .checkbox-wrapper label::after {
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    transform: rotate(-58deg);
+  }
+  
+  .checkbox-wrapper input + label::after, 
+  .radio-wrapper input + label::after {
+    content: none;
+  }
+  
+  .checkbox-wrapper input:checked + label::after, 
+  .radio-wrapper input:checked + label::after {
+    content: "";
+  }
+  /* HERO STYLES END */
+  
+  
+  /* SECTION TITLE STYLES START */
+  .section-title {
+    font-size: 22px;
+    border-left: 3px solid;
+    color: var(--primary-color);
+    padding-left: 80px;
+    text-align: left;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+  
+  .primary-border {
+    border-color: var(--secondary-color);
+  }
+  
+  .secondary-border {
+    border-color: var(--secondaryy-color);
+  }
+  /* SECTION TITLE STYLES END */
+  
+  /* WHAT WE DO STYLES */
+  .intro p. {
+    line-height: 1.7;
+    color: var(--primary-color);
+    width: 80%;
+    margin: auto 50px;
+    font-size: 20px;
+    text-align: right;
+    padding-left: 80 px;
+  }
+  /* WHAT YOU DO STYLES END */
+  
+  
+  /* WHAT YOU DO STYLES START */
+  .steps { 
+    background: var(--fourth-color);
+  }
+  
+  .step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .step:last-child {
+    border-bottom: none;
+  }
+  
+  .step h3 {
+    color: var(--primary-color);
+    font-size: 46px;
+    flex: 1 30%;
+  }
+  
+  .step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+  }
+  
+  .step-img img {
+    max-width: 100%;
+  }
+  
+  .step-text {
+    flex: 12;
+  }
+  
+  .step-text p {
+    color: var(--primary-color);
+    font-size: 18px;
+  }
+  
+  .step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--primary-color);
+  }
+  /* WHAT YOU DO STYLES END */
+  
+  /* TRAVEL AGENT START */
+  .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .travel-agent {
+    justify-content: right;
+    border: 2px solid var(--primary-color);
+    margin: 20px;
+    flex: 1;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .travel-agent img {
+    width: 100%;
+  }
+  
+  .travel-text {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    line-height: 1.3;
+  }
+  
+  /* travel-agent STYLES END */
+  
+  /* REACH OUT STYLES START */
+  .contact {
+    background: var(--tertiary-color);
+  }
+  
+  .contact h2 {
+    color: var(--primary-color);
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+  
+  .contact-info iframe {
+    height: 400px;
+  }
+  
+  .contact-info div {
+    color: white;
+  }
+  
+  .contact-info h3 {
+    color: var(--primary-color);
+    font-size: 32px;
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  .contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+  }
+  
+  .contact-info a {
+    color: var(--primary-color);
+  }
+  /* REACH OUT STYLES END */
+  
+  /* UTILITIES */
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .travel-agent {
+      flex: 0 70%;
+    }
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  
+    .trainer-bio h3, .trainer-bio h4 {
+      display: block;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  }
+  
